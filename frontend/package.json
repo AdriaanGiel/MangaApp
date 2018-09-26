@@ -1,0 +1,25 @@
+{
+  "name": "MangaTracker",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Adriaan Giel",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^2.1.14",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue": "^2.5.17",
+    "vue-resource": "^1.5.1",
+    "webpack": "^3.11.0"
+  },
+  "scripts":{
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  }
+}
