@@ -17,6 +17,18 @@ module.exports = {
             type: 'string',
             required: true,
         },
+        reviews: {
+            collection: 'review',
+            via: 'author'
+        },
+        comments: {
+            collection: 'comment',
+            via: 'author'
+        },
+        lists: {
+            collection: 'list',
+            via: 'author'
+        },
         role: {
             model: 'role'
         }
