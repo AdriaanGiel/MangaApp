@@ -6,21 +6,21 @@
  */
 
 module.exports = {
-  attributes: {
-    email: {
-        type: 'string',
-        required: true,
-        unique: true
+    attributes: {
+        email: {
+            type: 'string',
+            email: true,
+            required: true,
+            unique: true
+        },
+        password: {
+            type: 'string',
+            required: true,
+        },
+        role: {
+            model: 'role'
+        }
     },
-    password: {
-        type: 'string',
-        required: true,
-    },
-    role: {
-      collection: 'role',
-      via: 'owner'
-    }
-  },
 
 };
 

@@ -49,8 +49,7 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
     adapter: 'sails-mysql',
-    url: 'mysql://homestead:secret@192.168.10.10:3306/mangatracker',
-
+    url: 'mysql://homestead:secret@192.168.10.10:3306/mangatracker'
   },
 
 
